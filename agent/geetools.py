@@ -69,7 +69,7 @@ def ee_auth():
         'https://www.googleapis.com/auth/drive',
         'https://www.googleapis.com/auth/earthengine'
     ])
-    ee.Initialize()
+    ee.Initialize(project = "isro-ps-4")
     
 
 
