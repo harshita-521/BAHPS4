@@ -11,7 +11,7 @@ from rasterio.warp import reproject, Resampling
 from pydantic import BaseModel 
 from typing import List, TypedDict
 
-import osmnx as ox    
+import osmnx as ox   
 import ee
 
 from google.auth.transport.requests import Request

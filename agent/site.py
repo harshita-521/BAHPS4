@@ -963,7 +963,7 @@ with st.sidebar:
         st.rerun()
 
 # Main content area
-st.subheader("💬 Query Interface")
+st.subheader("Query Interface")
 
 # Query input
 default_query = st.session_state.get('example_query', "")
@@ -981,7 +981,7 @@ query = st.text_area(
 # Submit button
 col1, col2 = st.columns([1, 3])
 with col1:
-    submit_button = st.button("🚀 Analyze", type="primary", disabled=st.session_state.processing)
+    submit_button = st.button("Analyze", type="primary", disabled=st.session_state.processing)
 
 with col2:
     if st.session_state.processing:
@@ -996,16 +996,16 @@ with col2:
 if stream_thoughts:
     st.markdown("""
     <div class="streaming-section">
-        <h3>🔄 Real-time Analysis</h3>
+        <h3>Real-time Analysis</h3>
     </div>
     """, unsafe_allow_html=True)
     
     # Thoughts section (collapsible)
-    st.markdown('<div class="section-badge">� REASONING</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-badge">REASONING</div>', unsafe_allow_html=True)
     thought_container = st.empty()
     
     # Actions section (below thoughts)
-    st.markdown('<div class="section-badge">⚡ ACTIONS</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-badge">ACTIONS</div>', unsafe_allow_html=True)
     action_container = st.empty()
 
 # Helper functions for map display
@@ -1129,7 +1129,7 @@ if submit_button and query.strip():
                 thought_container.markdown(f"""
                 <div class="thoughts-section">
                     <div class="thoughts-header" onclick="toggleThoughts('current')">
-                        <span>💭 Reasoning Process</span>
+                        <span>Reasoning Process</span>
                         <span class="collapse-icon" id="thoughts-icon-current">▼</span>
                     </div>
                     <div class="thoughts-content" id="thoughts-content-current">
@@ -1181,7 +1181,7 @@ if submit_button and query.strip():
                 thought_container.markdown(f"""
                 <div class="thoughts-section">
                     <div class="thoughts-header" onclick="toggleThoughts('current')">
-                        <span>💭 Reasoning Process</span>
+                        <span>Reasoning Process</span>
                         <span class="collapse-icon" id="thoughts-icon-current">▼</span>
                     </div>
                     <div class="thoughts-content" id="thoughts-content-current">
@@ -1277,7 +1277,7 @@ if html_maps:
     with col2:
         # Add some spacing to align with selectbox
         st.markdown("<br>", unsafe_allow_html=True)
-        if st.button("🔄 Refresh Maps", help="Scan for new map files", use_container_width=True):
+        if st.button("Refresh Maps", help="Scan for new map files", use_container_width=True):
             st.rerun()
     
     # Display selected map
@@ -1374,7 +1374,7 @@ if st.session_state.chat_history:
                     st.markdown(f"""
                     <div class="thoughts-section">
                         <div class="thoughts-header" onclick="toggleThoughts('{i}')">
-                            <span>💭 Reasoning Process</span>
+                            <span>Reasoning Process</span>
                             <span class="collapse-icon" id="thoughts-icon-{i}">▼</span>
                         </div>
                         <div class="thoughts-content" id="thoughts-content-{i}">

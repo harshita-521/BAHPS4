@@ -9,7 +9,7 @@ from langchain.callbacks.base import BaseCallbackHandler
 from typing import Dict, Any, List, Optional
 import re
 
-# Import StreamingEvent if available
+# Import StreamingEvent if availablEE
 try:
     from workflow_agent import StreamingEvent
 except ImportError:
